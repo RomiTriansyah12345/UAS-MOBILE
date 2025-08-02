@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/judul_buku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harry Potter and The Cursed Child"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="12dp" />
+
+        <!-- Gambar -->
+
+        <!-- Info Judul & Penulis -->
+        <ImageView
+            android:id="@+id/gambar_buku"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:contentDescription="Cover Buku"
+            android:paddingBottom="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/harry" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul : Harry Potter and The Cursed Child\nPenulis: JK.Rowling"
+            android:textSize="16sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Deskripsi Buku -->
+        <TextView
+            android:id="@+id/isi_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:text="Sembilan belas tahun setelah kekalahan Voldemort, kini Harry Potter adalah Kepala Departemen Penegakan Hukum Sihir dan memiliki tiga anak dengan Ginny Weasley: James Sirius, Albus Severus dan Lily Luna. Hermione Granger menjadi Menteri Sihir dan telah menikah dengan Ron Weasley, yang mengelola Weasleys' Wizard Wheezes dan memiliki dua anak: Rose dan Hugo, yang menggunakan nama belakang ganda Granger Weasley. Di Stasiun King's Cross, Albus dan Rose menumpangi Hogwarts Express untuk memulai tahun pertama mereka di Hogwarts. Mereka bertemu dengan Scorpius Malfoy, putra dari Draco Malfoy, musuh bebuyutan orang tua mereka. Meskipun Rose memperlihatkan ketidaksukaan dan sikapnya yang dingin terhadap Scorpius, pertemuan ini adalah awal pertemanan Albus dan Scorpius." />
+    </LinearLayout>
+</ScrollView>

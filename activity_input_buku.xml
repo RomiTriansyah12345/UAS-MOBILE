@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#A8D08D">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Buku"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp" />
+
+        <EditText
+            android:id="@+id/editJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Judul Buku"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text" />
+
+        <EditText
+            android:id="@+id/editPenulis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Penulis"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/editHalaman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jumlah Halaman"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/editTahun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tahun Terbit"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/editRak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rak"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIMPAN"
+            android:layout_marginTop="20dp"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:background="#2E7D32"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnLihatData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIHAT DATA"
+            android:layout_marginTop="10dp"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:background="#33691E"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

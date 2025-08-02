@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A8D08D"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Buku"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#00796B"
+            android:padding="12dp" />
+
+        <!-- Tombol-tombol buku -->
+        <Button
+            android:id="@+id/btnHarryPotter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harry Potter and The Cursed Child"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnDilan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dilan 1991"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnBumi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bumi Manusia"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnPerahu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perahu Kertas"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnLaskar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Laskar Pelangi"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+</ScrollView>

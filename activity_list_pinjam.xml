@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="#C0E7A4">
+
+    <!-- Banner Header -->
+    <ImageView
+        android:id="@+id/bannerImage"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/benner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Daftar Buku -->
+    <LinearLayout
+        android:id="@+id/menuDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/bannerImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/menuCari"
+        android:layout_marginTop="40dp"
+        app:layout_constraintHorizontal_bias="0.2">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/daftar" />
+
+        <Button
+            android:id="@+id/daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Buku"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:onClick="openDaftarBuku" />
+
+    </LinearLayout>
+
+    <!-- Cari Buku -->
+    <LinearLayout
+        android:id="@+id/menuCari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/bannerImage"
+        app:layout_constraintStart_toEndOf="@id/menuDaftar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintHorizontal_bias="0.8">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cari1" />
+
+        <Button
+            android:id="@+id/btnCariBuku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cari Buku"
+            android:onClick="openCariBuku" />
+
+    </LinearLayout>
+
+    <!-- Input Buku -->
+    <LinearLayout
+        android:id="@+id/menuInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/menuDaftar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/menuList"
+        android:layout_marginTop="40dp"
+        app:layout_constraintHorizontal_bias="0.2">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/input1" />
+
+        <Button
+            android:id="@+id/btnInputBuku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Buku"
+            android:onClick="openInputBuku"
+            android:layout_marginTop="16dp" />
+
+
+    </LinearLayout>
+
+    <!-- List Pinjam -->
+    <LinearLayout
+        android:id="@+id/menuList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/menuCari"
+        app:layout_constraintStart_toEndOf="@id/menuInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintHorizontal_bias="0.8">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/list1" />
+
+        <Button
+            android:id="@+id/btnListPinjam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Pinjam"
+            android:layout_marginTop="16dp"
+            android:onClick="openListPinjam" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
